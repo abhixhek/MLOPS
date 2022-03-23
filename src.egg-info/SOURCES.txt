@@ -1,0 +1,13 @@
+setup.py
+src/__init__.py
+src/getData.py
+src/loadData.py
+src/splitData.py
+src/train_and_evaluate.py
+src.egg-info/PKG-INFO
+src.egg-info/SOURCES.txt
+src.egg-info/dependency_links.txt
+src.egg-info/top_level.txt
+tests/__init__.py
+tests/conftest.py
+tests/test_config.py
