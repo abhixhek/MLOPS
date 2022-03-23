@@ -1,0 +1,18 @@
+stages :
+  load_data :
+    cmd : python src/loadData.py --config=params.yaml
+    deps :
+      - src/getData.py
+      - src/loadData.py
+      - data_given/winequality.csv
+    outs :
+      - data/raw/winequality.csv
+      
+  split_data :
+    cmd : python src/splitData.py --config=params.yaml
+    deps :
+      - src/splitData.py
+      - data/raw/winequality.csv
+    outs :
+      - data/processed/train_winequality.csv
+      - data/processed/test_winequality.csv
